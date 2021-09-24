@@ -13,3 +13,28 @@
 .position-sticky{
     position: sticky !important;
 }
+
+.animation1{
+  animation-name:img-ani;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+
+.animation2{
+    opacity: 0;
+    animation-name:img-ani;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode:forwards
+}
+
+.caption1{
+    padding-top: 1.25rem;
+    padding-bottom: 15rem;
+}
+
+@keyframes img-ani {
+  from{opacity:0;}
+  to{opacity: 1;}
+}
